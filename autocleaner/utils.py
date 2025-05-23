@@ -19,5 +19,5 @@ def load_rewrite_table(filepath='autocleaner/rewrite_table.csv'):
     # Convert to dictionary
     rewrite_dict = dict(zip(df['original'], df['rewrite']))
     
-    print(f"✅ Loaded rewrite table with {len(rewrite_dict)} entries from {filepath}")
+    print(f"Loaded rewrite table with {len(rewrite_dict)} entries from {filepath}")
     return rewrite_dict

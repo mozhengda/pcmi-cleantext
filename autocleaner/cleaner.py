@@ -1,3 +1,4 @@
+import os
 import string
 import pandas as pd
 from .utils import load_rewrite_table 
@@ -41,10 +42,17 @@ def clean_column(df, columns_to_clean, rewrite_table):
     print(f"Total tokens rewritten across all columns: {stats['rewritten']}")
     return df
 
-def clean_column_auto(df, columns_to_clean, table_path='autocleaner/rewrite_table.csv'):
+def clean_column_auto(df, columns_to_clean, table_path=None):
     """
     Automatically loads the rewrite table and cleans specified DataFrame columns.
-    Use this when you don't want to manually load rewrite_table.
+    - If table_path is not provided, it will default to the rewrite_table.csv
+      located in the same folder as this module (cleaner.py).
+    - This makes it robust to be called from any working directory (e.g. notebooks, scripts).
     """
+    if table_path is None:
+        # This gets the absolute path to this file's directory
+        base_dir = os.path.dirname(__file__)
+        table_path = os.path.join(base_dir, 'rewrite_table.csv')
+    
     rewrite_table = load_rewrite_table(table_path)
     return clean_column(df, columns_to_clean, rewrite_table)

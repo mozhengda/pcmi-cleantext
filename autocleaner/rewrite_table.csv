@@ -1,0 +1,47 @@
+original,rewrite
+c/s,customer states
+tech,technician
+a/c,air conditioning
+cust,customer
+trans,transmission
+inop,inoperative
+cel,check engine light
+dtc,diagnostic trouble code
+dtcs,diagnostic trouble codes
+diag,diagnose
+evac,evacuate
+evap,evaporative emission system
+condensor,condenser
+assy,assembly
+r&r,remove and replace
+r/r,remove and replace
+rec,recommend
+cyl,cylinder
+hvac,heating ventilation and air conditioning
+o2,oxygen sensor
+pcv,positive crankcase ventilation
+ecm,engine control module
+tpms,tire pressure monitoring system
+tsb,technical service bulletin
+tcm,transmission control module
+ses,service engine soon
+bcm,body control module
+lf,left front
+rf,right front
+r/f,right front
+l/f,left front
+diff,differential
+ck,check
+cv,constant velocity
+accel,accelerator
+noisey,noisy
+p/s,power steering
+veh,vehicle
+waterpump,water pump
+cusotmer,customer
+re-check,recheck
+re-seal,reseal
+recomend,recommend
+tranmission,transmission
+replacment,replacement
+vehcile,vehicle
